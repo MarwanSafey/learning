@@ -1,0 +1,28 @@
+body {
+    width: 400px;
+    margin: auto;
+    font-family: sans-serif;
+    font: bold;
+}
+
+.html , .css , .js {
+    background-color: #eee;
+    list-style: none;
+    padding: 10px;
+    margin: 15px;
+}
+
+.cssx {
+    list-style: upper-roman;
+}
+
+.jso {
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+li {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}

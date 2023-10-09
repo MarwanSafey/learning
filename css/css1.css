@@ -1,0 +1,821 @@
+/* selector {
+    Property: Value;
+    PropertyTwo: Value
+} */
+
+/* (.) used for class
+   (#) used for ID  */
+p {
+  color: red;
+  font-size: 40px;
+}
+
+.special {
+  color: green;
+  font-size: 40px;
+}
+
+div {
+  background-color: red;
+  background-color: rgb(red, green, blue);
+  background-image: url("../imgs/ayhaga.png");
+  /* repeat: the image many times
+     no-repeat: one image  */
+  background-repeat: repeat;
+  /* fixed: the image stay in the background during scroll
+     scroll: the image will stay up during scroll down */
+  background-attachment: fixed;
+  background-position: left top;
+  background-position: 100px 200px;
+  background-position: 50% 50%;
+  /* cover: the image will cover all the screen in the background 
+     contain: the image will shrink in size even you minimize the screen size*/
+  background-size: cover;
+  background-color: #ddd;
+  /* padding from where to start the words top right bottom left 
+     margin  from where to start the content from the screen window*/
+  padding: 20px;
+  width: 300px;
+  margin: 10px;
+  border-width: 10px;
+  border-color: red;
+  border-style: solid;
+  /* short handed can't be custamized e.g( each side)*/
+  border: 10px solid red;
+  border-radius: 5px;
+  /* outline usally not used */
+  outline: 10px solid blue;
+}
+
+div {
+  background-color: #eee;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 30px;
+  max-width: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  /* 3ala ad the content */
+  width: fit-content;
+  /* if the content is overflow will add scroll, if not will remove the scroll */
+  overflow: auto;
+  /* text-shadow: H-Shadow V-Shadow Blur Color */
+  text-shadow: 0 0 0 red;
+  text-align: center;
+  /* direction of text left to right */
+  direction: ltr;
+  /* to make the text alignment with a photo for eg */
+  vertical-align: top;
+}
+span {
+  background-color: #eee;
+  padding: 30px;
+  /* will convert the inline into block and can control width and hight */
+  display: block;
+  margin: 20px;
+}
+/* 
+  Block
+  -Take Full Width If No Width
+  -Add Line Break
+  -Respect Padding , Margin, Width, Height
+  
+  Inline
+  -Do Not Respect Width , Height
+  -Respect Padding and Margin [just left + right]
+  -Do Not Add Line Break
+  -Allow Elements Before and After it
+
+  Inline-Block
+  -Allow Elements Before and After it
+  -Respect Padding , Margin, Width, Height
+*/
+.first {
+  /* none: when remove it will jump into to display */
+  display: none;
+  /* visibility hidden when remove it appear smothly in its place as it is already reserved in this place */
+  visibility: hidden;
+}
+
+.one {
+  padding: 10px;
+  border-bottom: 2px solid red;
+  color: red;
+  margin: 10px 0;
+  background-color: #eee;
+}
+
+.two {
+  padding: 10px;
+  border-bottom: 2px solid green;
+  color: green;
+  margin: 10px 0;
+  background-color: #eee;
+}
+.three {
+  padding: 10px;
+  border-bottom: 2px solid blue;
+  color: blue;
+  margin: 10px 0;
+  background-color: #eee;
+}
+.four {
+  padding: 10px;
+  border-bottom: 2px solid black;
+  color: black;
+  margin: 10px 0;
+  background-color: #eee;
+}
+
+/* Grouping remove the common from each class and put it in one */
+.one,
+.two,
+.three,
+.four,
+.my-p {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #eee;
+}
+
+/* p inside the div */
+div p {
+  color: red;
+}
+
+/* the element with class special */
+div .special {
+  color: red;
+}
+
+/*
+Text Spacing:
+-Letter Spacing
+-Indentation
+-Line Height
+-Word spacing + Wraping + White Space
+*/
+
+div {
+  background-color: #f9f9f9;
+  /* putting lines: underline , overline , line-through  */
+  text-decoration: underline;
+  /* capatalize: cappital first letters , uppercase, lowercase  */
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  /* Indentation to leave space in the begining of the line  */
+  text-indent: 50px;
+  /* height space between lines */
+  line-height: 1.5;
+  /* space between words */
+  word-spacing: 1px;
+  /* nowrap will get out the padding */
+  white-space: normal;
+  word-break: break-word break-all;
+  overflow: hidden;
+  /* ellipsis: making ... means there is rest */
+  text-overflow: ellipsis;
+  border-color: inherit;
+  padding: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cairo", sans-serif;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  float: left;
+  clear: both;
+  width: calc(94% / 5);
+  margin-left: 1%;
+  /* used to fade the backgroud to focus on the popup message */
+  opacity: 0.1;
+  /* as the number increase will be on the top and must use position with it to work */
+  z-index: 2;
+  /* bulletin normal is outside of block */
+  list-style: inside;
+  list-style-position: inside;
+  list-style-image: url();
+}
+
+/* 
+Content Width Is: 100%
+6 Spaces 1% * 6 => 6% From Content Width
+94% Available Space OR : (100% - 60px)
+5 Elements The Width Is: 94% / 5
+*/
+
+/* 
+Postion:
+---------
+-Static => Default (Reset everything)
+-Relative => change the position inside this element dimensions
+-Absolute => change the position on his own 
+-Fixed => change the position on his own but stay fixed on the screen even in scroll
+-Sticky => make the position stay sticky even in scroll
+*/
+
+/* pseudo classes */
+/* when i get the curser on the link */
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: blue;
+}
+
+.ch:checked + label {
+  color: red;
+}
+
+.in:focus {
+  border-color: yellow;
+  outline: none;
+}
+
+/* this is old school for coloring first letter insted use pseudo elements  */
+.one span {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.two::first-letter {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.three::first-line {
+  font-weight: bold;
+  color: green;
+}
+
+/* when selecting text with mouse normal is background blue and font white */
+.four::selection {
+  background-color: black;
+  color: yellow;
+}
+
+/* lw 3awez to7ot border at the end of the  */
+.one .pipeline {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: 0;
+  background-color: green;
+}
+/* in the parent class to make counters for users */
+.parent {
+  counter-increment: members-counter;
+}
+
+.one::after {
+  content: counter(members-counter);
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: 0;
+  background-color: green;
+}
+
+.one::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent green transparent transparent;
+}
+
+/* data-text is attribute in html  */
+.one::before {
+  content:attr(data-text);
+  display: none;
+}
+
+.one:hover::before {
+  display: block;
+}
+
+/* 
+-webkit : Chrome, Safari, New Opera Version
+moz : Mozilla Firefox
+ms : IE , Edge
+o : Old Version of Opera
+VS code Addon to add the prefix
+Task Runer
+*/
+.class {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* 
+H-Shadow | V-Shadow | Blur | Spread | Color | Inset
+*/
+
+div {
+  box-shadow: 0 0 0 0 ###ddd inset;
+}
+
+/* called the prefixes */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.one {
+  background-color: #eee !important;
+  width: 200px;
+  height: 100px;
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+  transition-property: margin-left, margin-top;
+  transition-timing-function: ease;
+  transition: width 3s, height 1s;
+  transition: all .5s 2s linear;
+}
+
+.one:hover {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 280px;
+}
+
+/*  
+CSS Variables:
+ - Global Variable
+ - Local Variable
+ var(Variable Name, Fallback Value)
+*/
+
+:root {
+  --maincolor: blue;
+  --mainpadding: 10px;
+}
+
+.main {
+  background-color: var(--maincolor, black);
+  color: white;
+  padding: var(--mainpadding);
+  padding: calc(20px + var(--mainpadding));
+}
+
+/* 
+Flexible Box:
+--------------
+For parent
+-display: flex => to start flexible Box
+-flex-direction: row => Default Value
+-flex-wrap: nowrap => Default value (ya3ny ye7shor kolo w my2osish haga w nenazelha next line)
+nowrap: Every item is fit to a single line.
+wrap: Items wrap around to additional lines.
+wrap-reverse: Items wrap around to additional lines in reverse.
+Another property you can apply to individual items is align-self. 
+This property accepts the same values as align-items and its value for the specific item.
+Notice that when the flex direction is a column, 
+justify-content changes to the vertical and align-items to the horizontal.
+-flex-flow: [Flex-Direction] + [Flex-wrap]
+-justify-content: flex-start => default value
+-align-items: stretch => default value
+-align-content: stretch => default value
+You can use align-content to set how multiple lines are spaced apart from each other. 
+For Child
+-flex-grow: 0 => default value
+-flex-shrink: 1 => default value
+-order:  0 => default value
+flex-basis 
+-flex-basis: auto => default value
+-flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 auto
+-align-self: auto => default value
+Notice that when the flex direction is a column, 
+justify-content changes to the vertical and align-items to the horizontal.
+This can be confusing, but align-content determines the spacing between lines,
+while align-items determines how the items as a whole are aligned within the container. 
+When there is only one line, align-content has no effect.
+*/
+.flex {
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-self:;
+  align-items: flex-start;
+  align-content: space-evenly;
+}
+
+.flex div {
+  background-color: red;
+  color: white;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+  order: 5;
+}
+
+/* Filters */
+
+img {
+  transition: 0.3s;
+  filter: grayscale(100%);
+  filter: blur(4px);
+  filter: invert(100%);
+}
+
+img {
+  filter: grayscale(0);
+  filter: blur(0);
+  filter: invert(0);
+}
+
+/* Gradients:
+linear-gradient (Direction || Angle, color stop 1, color stop 2,....)
+*/
+
+div {
+  background-image: linear-gradient(to right, red, green);
+  width: 800px;
+  height: 300px;
+  background-color: #eee;
+  margin: 20px auto;
+  position: relative;
+  padding: 10px;
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  height: 10px;
+  border-image: linear-gradient(to right, #d35400 20%,#2980b9 40% ,#27ae60 60%, #c0392b 80%,#8e44ad 100%) 1;
+  background-image: linear-gradient(
+    to right, 
+    #2980b9 20%, 
+    #27ae60 20%, 
+    #27ae60 40%, 
+    #d35400 40%,
+    #d35400 60%,
+    #8e44ad 60%, 
+    #8e44ad 80%, 
+    #c0392b 80%
+    );
+}
+
+/* Caret Color
+Pointer Events
+*/
+
+/* Grid
+parent
+-display: grid | inline-grid
+-grid-template-columns => [Num. of columns In] => [px , % , auto , fr, repeat(), mix] 
+-grid-template-rows => same
+-auto is shy: 3la 2d l content
+-fr is greedy: beya5od l ba2y
+-to collapse rows and columns grid-row/ grid-column: 1/5 or span 4;
+Child 
+-grid-column: [Grid Column Start] [Grid Column End]
+-grid-row: [Grid Row Start] [Grid Row End]
+-grid-area: [Grid Row Start] [Grid Column start] [Grid Row End] [Grid Column End]
+*/
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  row-gap: 10px;
+  column-gap: 10px;
+  gap: 10px 10px;
+}
+
+/* HTML section for the below:
+<body>
+  <div class="page">
+    <h2>Elzero</h2>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      <ul>
+    </nav>
+    <section>Content</section>
+  </div>
+</body>
+*/
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.page {
+  height: 100vh;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 50px auto 50px;
+  /* these are for the 3 rows above "first row" "second row"... */
+  grid-template-areas: 
+    "logo logo nav nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont sid sid"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+
+h2 {
+  grid-area: logo;
+  background-color: red;
+  color: white;
+}
+
+nav {
+  grid-area: nav;
+  background-color: blue;
+  color: white;
+}
+
+section {
+  grid-area: cont;
+  background-color: yellow;
+  color: white;
+}
+
+aside {
+  grid-area: side;
+  background-color: green;
+  color: white;
+}
+
+footer {
+  grid-area: foot;
+  background-color: black;
+  color: white;
+}
+
+/* 
+2D Transform:
+-scaleX
+-scaleY
+-scale ;
+-Rotate;
+-skewX
+-skewY
+-skew
+-matrix
+ syntax => matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
+360deg = 6.28rad = 400grad = 1turn
+-deg => Degrees
+-rad => Radians
+-grad => Gradians
+-turn => Turn
+-translate
+transform: scale 2;
+transform: rotate(360deg)
+transform: translate(10px,-10px)
+
+Transform-origin:
+Syntax
+Default Values => 50% 50% 0
+2D Transform => transform-origin(X, Y)
+3D Transform => transform-origin(X, Y, Z)
+X-Axis
+- CSS Unit [px, em, rem]
+- %
+- keyword
+-- Left = 0%
+-- Center = 50%
+-- Right = 100%
+Y-Axis
+- CSS Unit [px, em, rem]
+- %
+- keyword
+-- Top = 0%
+-- Center = 50%
+-- Bottom = 100%
+*/
+
+.image {
+  overflow: hidden;
+  width: 720px;
+  height: 350px;
+}
+
+.image img {
+  transition: 0.5s;
+}
+
+.image:hover img {
+  transform: scale(1.3) rotate(5deg);
+  opacity: 0.7;
+}
+
+html section 
+<div class = "container">
+  <div class = "box">
+    <div class = "face front">Front</div>
+    <div class = "face back">Back</div>
+  </div>
+</div>
+
+.container {
+  margin: 40px auto;
+  width: 200px;
+  perspective: 600px;  /*used for the 3d*/
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.box:hover {
+  transform: rotateY(-180deg);
+}
+
+.box .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  backface-visibility: hidden; /*betshtaghal lama rotate 180 3ashan yeb2a backface*/
+}
+
+.box .front {
+  background-color: red;
+}
+
+.box .back {
+  background-color: green;
+  transform: rotateY(180deg);
+}
+
+/* 
+*Animation:
+-keyframes
+-animation name
+-animation duration
+-direction
+-delay
+-fill-mode
+-play-state
+-shorthand
+*/
+
+div {
+  animation-name: change-color;
+  animation-duration: 4s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+div:hover {
+  animation-play-state: paused;
+}
+@keyframes change-color {
+  from { /*0%*/
+    background-color: red;
+  }
+  to { /*100%*/
+    background-color: blue;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* CSS Selectors 
+=============
+== Part 1 ==
+=============
+- * root and put all common things
+- Element => [p, div, h2]
+- Element OtherElement => div p
+- .class-name
+- #id-name
+- .parent .child [class under class]
+- .class-one.class-two [element that has 2 classes]
+- .class-name div [div under this class]
+- .class-name div , .class-name p [grouping]
+- Element.class-name
+- .parent > .child [class child is directly under class parent]
+===========
+== Part 2==
+===========
+ - Element + other Element => [div + p] (p is under div directly)
+ - Element ~ other Element => [p ~ div] (all the divs under P in the same level called seblings)
+ - [Attribute]
+ - Element[Attribute] => div[title]
+ - [Attribute=value]
+ - Element[Attribute=value] => div[title="s01"] ex: input[type="search"]
+ - [Attribute~=value] => Contains A Word
+ - [Attribute*=value] => contains a String (can be a part of a word)
+ - [Attribute^=value] => start with a String
+============
+== Part 3 ==
+============
+- :first-child => p:first-child (first child p for the parent)
+- :last-child => p:last-child (last p for the parent)
+- :first-of-type
+- :last-of-type
+- :only-child
+- :only-of-type
+============
+== Part 4 ==
+============
+- :not(Selectors) => p:not(:first-child)  [any child p except the first-child p]
+- :nth-child(n/even/odd)
+- :nth-last-child(n)
+- :nth-of-type(n)
+- :nth-last-of-type(n)
+============
+== Part 5 ==
+============
+- :root
+- :checked => input[type="checkbox"]:checked + label {corlor:red;}
+- :empty
+- :disabled
+- :required
+- :focus
+- ::selection
+- ::placeholder
+*/
+
+/* 
+Media Queries & Respnsive Designs:
+---------------------------------
+*/
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .parent > div {
+    background-color: blue;
+  }
+}
+
+/* Mobile Screen */
+@media (max-width: 767px) {
+}
+
+/* Small Screens */
+@media (min-width: 768px) {
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+}
+
+/* Large Screens00 */
+@media (min-width: 1200px) {
+}
+
+/* 
+CSS Global Values
+- inherit  > inherit the parent features
+- initial > put it to its default if there is no inherit
+- unset
+   -- If Inherit => inherit
+   -- If Not => initial
+- revert > revert it to the user agent 
+- all
+*/

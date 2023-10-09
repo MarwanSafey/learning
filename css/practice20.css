@@ -1,0 +1,28 @@
+div {
+    background-color: #9e9b9b;
+    margin: auto;
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+div::before {
+    content: "";
+    width: 20px;
+    height: 30px;
+    background-color: #ff000064;
+    position: absolute;
+    left: -10px;
+    top: 40%;
+    margin-top: -10px;
+}
+
+div::first-letter {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    
+}

@@ -1,0 +1,28 @@
+body {
+  display: inline-flex;
+  outline: 5px;
+  width: 100%;
+}
+div {
+  outline: 5px solid black;
+  padding: 50px;
+  background-color: gray;
+  margin: 15px;
+  width: calc(90% / 4);
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.shape1 {
+  border: 5px solid red;
+}
+.shape2 {
+  border: 5px solid;
+  border-color: blue green;
+}
+
+.shape3 {
+  border: 5px dashed;
+  border-color: red green blue yellow;
+}

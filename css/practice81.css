@@ -1,0 +1,4 @@
+div[title="Elzero"]:not(div div , .no-need) , [title="Hello"] , [title="HTML"] {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,21 @@
+div {
+    width: 400px;
+    background-color: rgba(128, 128, 128, 0.415);
+    padding: 25px;
+    margin: 25px;
+}
+
+.hide {
+    height: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.etc {
+    height: 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}

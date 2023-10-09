@@ -1,0 +1,44 @@
+div {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 50px auto;
+    background-color: #eee;
+    padding: 5px;
+    width: 500px;
+    height: 200px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    transition-property: margin-top ;
+    position: relative;
+    
+}
+
+.parent {
+    width: 300px;
+    height: 20px;
+}
+
+.child {
+    position: absolute;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    background-color: rgba(146, 146, 146, 0.452);
+    width: 320px;
+    height: 20px;
+    line-height: 10px;
+    padding: 20px;
+    top: 40px;
+    left: 90px;
+    transition-property: margin-top ;
+    
+}
+
+div:hover {
+    margin-top: 20px;
+}
+
+.child:hover {
+    margin-top: 80px;
+}

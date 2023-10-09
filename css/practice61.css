@@ -1,0 +1,24 @@
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template: 10% 10% / repeat(2,1fr);
+  }
+
+  div {
+    align-content: space-between;
+  }
+
+div div {
+    background-color: #ff005f;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

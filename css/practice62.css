@@ -1,0 +1,60 @@
+.grid {
+    background-color: #eee;
+    padding: 20px;
+    width: 800px;
+    height: 100vh;
+    margin: 20px auto;
+    font-family: sans-serif;
+    display: grid;
+    grid-template: repeat(4,auto) / repeat(4,auto);
+}
+
+h4 {
+    line-height: 0.5;
+}
+.title {
+    color:gray;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.osama , .ahmed , .moibrahim , .ezz , .mosayed , .gasayed , .emsayed {
+    background-color: white;
+}
+
+.shady , .mahmoud , .ibsayed {
+    background-color: black;
+    color: white;
+}
+
+div div {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 2px solid red;
+    white-space: wrap;
+    overflow: hidden;
+}
+
+.osama {
+    grid-area: 1 / 1 / 1 / 3;
+}
+
+.shady {
+    grid-area: 1 / 4 / 4 / 4;
+}
+
+.moibrahim {
+    grid-area: 2 / 1 / 4 / 1;
+}
+
+.mahmoud {
+    grid-area: 2 / 2 / 2 / 4;
+}
+
+.ezz {
+    grid-area: 3 / 2 / 3 / 4;
+}

@@ -1,0 +1,8 @@
+div {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font: 100px bold;
+    text-shadow: 0 2px 0 red , 0 4px 0 blue , 0 6px 0 purple   ;
+    text-transform: capitalize;
+}

@@ -1,0 +1,55 @@
+body{
+    font-family: sans-serif;
+    color: white;
+    padding: 10px;
+}
+
+.layout {
+    height: 50vh;
+    width: 100vh;
+    display: grid;
+    grid-template: 10% 80% 10% / repeat(10,1fr) ;
+    grid-template-areas: "head head head head head head head head head head" 
+                         "sec sec sec sec sec sec sec asid asid asid"
+                         "foot foot foot foot foot foot foot foot foot foot";
+}
+
+header {
+    background-color: #397cf9;
+    grid-area: head;
+    padding: 10px;
+}
+
+header::after {
+    content: "Header";
+}
+
+section {
+    background-color: #d84141;
+    grid-area: sec;
+    padding: 10px;
+}
+
+section::after {
+    content: "Section";
+}
+
+aside {
+    background-color: grey;
+    grid-area: asid;
+    padding: 10px;
+}
+
+aside::after {
+    content: "Aside";
+}
+
+footer {
+    background-color: #03bf96;
+    grid-area: foot;
+    padding: 10px;
+}
+
+footer::after {
+    content: "Footer";
+}

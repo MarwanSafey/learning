@@ -1,0 +1,14 @@
+p {
+    padding: 50px;
+    background-color: rgba(128, 128, 128, 0.475);
+    text-transform: capitalize;
+    border: inherit;
+    text-align: center;
+    margin: inherit;
+    font-size: 50px;
+}
+
+div {
+    border: 5px solid red;
+    margin: 30px;
+}

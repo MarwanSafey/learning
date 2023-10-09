@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!-- doctype to tell that we are using html5 or it will use the quirks mode which not 
+supporting everything
+html: Hypertext Markup Language
+The <html> tag represents the root of an HTML document.
+The <html> tag is the container for all other HTML elements (except for the <!DOCTYPE> tag).
+
+Note:You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.-->
+<html lang="en">
+    <head>
+        <!-- comment can be done by ctrl+? -->
+        <!-- this meta for reading the lang and arabic support -->
+        <meta charset="UTF-8"/>
+        <title>
+            Book Store
+        </title>
+        <meta name="description" content="This is our book store"/>
+        <style></style>
+        <script></script>
+        <link rel="stylesheet" href=""/>
+    </head>
+    <body>
+        <!--  Tags
+            b => Bold
+            strong => Bold => Important text
+            i => italic
+            em => empasized = i
+            mark => high lighted text
+            u => underlined text
+            small => smaller text
+            del => Deleted text
+            ins => inserted text
+            sub => subscript
+            sup => superscript
+            ul => unordered list
+            li => List items (can use value to start with)
+            ol => ordered list
+            reversed => Reverse the ordering 
+            start => start from position
+            type => type of ordering
+            dl => discription list
+            dt => term
+            dd => description of term
+            table => 
+            thead => header cell
+            th => data header cell (bold)
+            tbody =>
+            tfoot => 
+            tr => row
+            td => data of the cells 
+            caption => title for table
+            span => to make isolate element to control it in css
+            br => break to the next line
+            hr => horizontal ruler (block line)
+            div => container to control all things inside it  
+
+         -->
+        <h1>Book Store</h1>
+        <h2>chapter title inside book</h2>
+        <h3>story title inside chapter</h3>
+        <h4>Book Store</h4>
+        <h5>Book Store</h5>
+        <h6>Book Store</h6>
+        <p>This is my book store, Welcome</p>
+        <p>We have a big sale</p>
+        <img src="stylesheet" alt="">     <!-- src => source & alt => Alternate text-->
+        <img src="stylesheet" alt="">     <!-- src => source & alt => Alternate text-->
+        <a href="https:google.com">Google</a>  <!--hyper text refrence (Anchor) link-->
+        <a href="https:facebook.com" title="go to facebook">facebook</a>  <!--hyper text refrence (Anchor) link-->
+        <a href="https:google.com" target="blank" title="go to google">Google</a>  <!--hyper text refrence (Anchor) link-->
+        <a href="#vip" target="blank" title="go to Important paragraph">VIP paragraph</a>  <!--hyper text refrence (Anchor) link-->
+        <a href="mailto:o@marwan.safey@hotmail.com">contact me</a>
+        
+
+        <!-- controls: to show play and pause
+          autoplay: to play the audio automatic
+          loop : to repeat after it finish
+          muted : to mute the audio-->
+        <audio controls autoplay loop muted>
+            <source src="media/only_you.mp3" type="audio/mpeg">  <!-- type betgybo mn l MIME type from internet -->
+            Your browser does not support audio tag
+        </audio>
+
+        <!-- poster: image until the video is loaded
+            track: for subtitles, ect... -->
+        <video controls width="600" height="400" autoplay loop muted poster="imgs/home/cover-speed-website.png" >
+            <source src="media/ghost.mp4" type="video/mp4">
+            Your browser does not support video tag
+            <track src="my_file.vtt" kind="subtitles" srclang="en" label="english">
+            <track src="my_file.vtt" kind="subtitles" srclang="it" label="italian">
+        </video>
+        <!-- 2al l preload dah ne2ra 3ano -->
+
+        <hr>
+
+        <header>Head of Website</header>         <!--dool div b asamy mo3abera-->
+        <nav>link - link - link</nav>
+        <section>
+            <section>Section</section>
+            <aside>Aside</aside>
+        </section>
+        <footer>Footer</footer>
+
+        <p>This is <span>my</span>  <b>book store</b>, Welcome</p>
+        <p>This is my <strong>book store</strong>, Welcome</p>
+        <p>This is my <i>book store</i>, Welcome</p>
+        <p>This is my <em>book store</em>, Welcome</p>
+        <p>This is my <mark>book store</mark>, Welcome</p>
+        <p>This is my <u>book store</u>, Welcome</p>
+        <p>This is my <small>book store</small>, Welcome</p>
+        <p>This is my <del>book store</del>, Welcome</p>
+        <p><del>$100</del> --> $80</p>
+        <p>This is my <ins>book store</ins>, Welcome</p>
+        <p>h<sub>2</sub>o</p>
+        <p>x<sup>2</sup>o</p>
+        
+
+        <p>This is second paragraph <br>test<br> test again</p>
+        <!-- type lorem then Tab will automatic make the line -->
+        <!-- to repeat the lines Shift + Alt + up/Down -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, temporibus itaque corporis nobis, molestiae nisi similique amet qui aperiam rerum asperiores veniam velit adipisci suscipit quas voluptatibus. Culpa, molestias unde.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, temporibus itaque corporis nobis, molestiae nisi similique amet qui aperiam rerum asperiores veniam velit adipisci suscipit quas voluptatibus. Culpa, molestias unde.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, temporibus itaque corporis nobis, molestiae nisi similique amet qui aperiam rerum asperiores veniam velit adipisci suscipit quas voluptatibus. Culpa, molestias unde.</p>
+        <p id="vip"> ##VIP Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, temporibus itaque corporis nobis, molestiae nisi similique amet qui aperiam rerum asperiores veniam velit adipisci suscipit quas voluptatibus. Culpa, molestias unde.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, temporibus itaque corporis nobis, molestiae nisi similique amet qui aperiam rerum asperiores veniam velit adipisci suscipit quas voluptatibus. Culpa, molestias unde.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, temporibus itaque corporis nobis, molestiae nisi similique amet qui aperiam rerum asperiores veniam velit adipisci suscipit quas voluptatibus. Culpa, molestias unde.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, temporibus itaque corporis nobis, molestiae nisi similique amet qui aperiam rerum asperiores veniam velit adipisci suscipit quas voluptatibus. Culpa, molestias unde.</p>
+
+        <div>
+            This is my &lt;p&gt; Div &copy; &asymp; (entity name)
+        </div>
+
+        <div class="romantic">
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>
+        </div>
+    
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS
+                <ul>
+                    <li>Angular</li>
+                    <li>Reactjs</li>
+                    <li>Vuejs</li>
+                </ul>
+            </li>
+        </ul>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Language of the web</dd>
+            <dd>the first lan</dd>
+            <dt>CSS</dt>
+            <dd>Language of the visuals</dd> 
+        </dl>
+
+         <!-- table => 
+            thead => header cell
+            th => data header cell (bold)
+            tbody =>
+            tfoot => 
+            tr => row
+            td => data of the cells 
+            caption => title for table -->
+        <table>
+            <caption>Students Marks</caption>
+            <thead>
+                <tr>
+                    <th>first</th>
+                    <th>last</th>
+                    <th>marks</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>marwan</td>
+                <td>safey</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>marwan</td>
+                <td>safey</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>marwan</td>
+                <td>safey</td>
+                <td>30</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>  <!--to merge cells-->
+                    <td>160</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+
+        <header>
+            <h2>Logo</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </header>
+        <hr>
+        
+        <nav>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </nav>
+       
+        <hr>
+        <section>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Caption of the Image</figcaption>
+            </figure>
+            <article>
+                Content
+            </article>
+        </section>
+        <aside>
+            sidebar
+        </aside>
+        <hr>
+        <footer>
+            Footer
+        </footer>
+        <hr>
+        <!-- method= get: will appear the info in the link
+                     post: will hide the info from the link -->
+        <form action="" method="post" novalidate target="blank">   
+            <div>
+                <label>Username</label>
+                <!-- readonly attribute will not change the value -->
+                <input type="text" required placeholder="Username" name="user" value="osama" readonly>
+            </div>
+            <div>
+                <label>subject</label>
+                <!-- autofocus make you automatically to type in this attribute first thing  -->
+                <input type="text" name="subject" autofocus>
+            </div>
+            <br>
+            <div>
+                <label>Password</label>
+                <input type="password" required placeholder="write complex password" name="password" minlength="8" maxlength="10">
+            </div>
+            <div>
+                <label>Email</label>
+                <!-- disabled attribute doesn't send the info and make it demid -->
+                <input type="email" required placeholder="write valid Email" value="O@nn.sa" name="mail" disabled>
+            </div>
+            <div>
+                <!-- name is info that will be send to the backend -->
+                <label>Color</label>
+                <input type="color" name="color">
+            </div>
+            <div>
+                <label>Range</label>
+                <input type="range" name="range" min="0" max="100" step="10" value="50">
+            </div>
+            
+            <div>
+                <!-- using the id to choose the word itself not only in the filed -->
+                <label for="num">Number</label>
+                <input id="num" type="number" name="number" min="0" max="100" step="10" value="50">
+            </div>
+            <hr>
+            <div>
+                <!-- using the id to choose the word itself not only the checkbox or radio -->
+                <input id="win" type="radio" name="operating_system" value="windows" checked>
+                <label for="win">windows</label>
+            </div>
+            <div>
+                <input id="lin" type="radio" name="operating_system" value="linux">
+                <label for="lin">Linux</label>
+            </div>
+            <div>
+                <input id="mac" type="radio" name="operating_system" value="mac">
+                <label for="mac">Mac</label>
+            </div>
+            <div>
+                <input id="win1" type="checkbox" name="operating_system" value="windows" checked>
+                <label for="win1">windows</label>
+            </div>
+            <div>
+                <input id="lin1" type="checkbox" name="operating_system" value="linux">
+                <label for="lin1">Linux</label>
+            </div>
+            <div>
+                <input id="mac1" type="checkbox" name="operating_system" value="mac">
+                <label for="mac1">Mac</label>
+            </div>
+            <hr>
+            <u><label for="book">Choose Book:</label></u> <br>
+            <select name="book" id="book" multiple>
+                <optgroup label="Romantic Books">
+                    <option value="1">Book 1</option>
+                    <option value="2">Book 2</option>
+                    <option value="3">Book 3</option>
+                </optgroup>
+                <optgroup label="Police Books">
+                    <option value="4" selected>Book 4</option>
+                    <option value="5">Book 5</option>
+                    <option value="6">Book 6</option>
+                </optgroup>
+            </select>
+
+            <hr>
+
+            <textarea name="subject" cols="30" rows="10" placeholder="insert your comment"></textarea>
+
+            <hr>
+
+            <div>
+                <label>Upload</label>
+                <input type="file">
+            </div>
+            <hr>
+            <div>
+                <label>Search</label>
+                <input type="search">
+            </div>
+            <hr>
+            <div>
+                <label>Url</label>
+                <input type="url">
+            </div>
+            <hr>
+            <div>
+                <label>Date</label>
+                <input type="date">
+            </div>
+            <hr>
+            <div>
+                <label>Month</label>
+                <input type="month">
+            </div>
+            <hr>
+            <div>
+                <label>Time</label>
+                <input type="time">
+            </div>
+            <hr>
+            <u><label>Choose your Programing Language: </label></u><br>
+            <input list="programing" placeholder="Lang. Prog." name="prog">
+            <datalist id="programing">
+                <option value="Python">
+                <option value="PHP">
+                <option value="C#">
+                <option value="C">
+                <option value="C++">
+                <option value="Scala">
+            </datalist>
+            <hr>
+            <!-- q: for quote
+                blockquote: for main quote -->
+            <q>This Is Wise Word</q>
+            <blockquote>This Is Wise Word</blockquote>
+            <button>Click</button>
+            <!-- wbr: to break the long line(eg. link) 
+                    bdi: use it with different lang in same line -->
+            <div>
+                https://www.youtube.com/<wbr>?v=AzjtVtxoBLc&list=PLDoPjvoNmBAw_t_XWUFbBX<wbr>-c9MafPk9ji&index=33
+            </div>
+            <p>السلام 2 Welcome</p>
+            <p><bdi>السلام</bdi> 2 Welcome</p>
+            <hr>
+            <input type="Reset" value="Reset">
+            <input type="submit" value="save">
+            <!-- hidden input is used to send it to backend -->
+            <input type="hidden" value="osama">
+            
+        </form>
+
+        <code>
+            var x = 10;
+            var y = 20;
+            console.log(x+y);
+        </code>
+        <p>
+            This is
+            P
+            New line 
+        </p>
+        <pre>
+            This is
+            P
+            New line 
+        </pre>
+        <pre>
+            <code>
+                var x = 10;
+                var y = 20;
+                console.log(x+y);
+            </code>
+        </pre>
+       
+        <iframe src="https://elzero.org/study/html-2021-study-plan/" frameborder="10" width="800" height="400"></iframe>
+        <hr>
+        <!-- check the Accessibility through inspect -> lighthouse -->
+        <form action="">
+            <label for="user">Username</label>
+            <input id="user" type="text" name="user" placeholder="Enter your username">
+            <button>Send</button>
+            <button>Reset</button>
+        </form>
+        <hr>
+        <!-- (ARIA) Accessible Rich Internet Applications -->
+        <div role="checkbox" aria-checked="true" tabindex="0" aria-label="plan1">Plan One</div>
+        <label id="plan1">Plan One label</label>
+        <div tabindex="0">plan Two</div>
+        <div tabindex="0">plan Three</div>
+<hr>
+    </body>
+</html>

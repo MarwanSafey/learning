@@ -1,0 +1,86 @@
+/* https://codepen.io/takeradi/pen/MyYqKX */
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: #eee;
+    font-family: sans-serif;
+    
+}
+
+body {
+    display: flex;
+}
+
+.header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 5px;
+    align-items: center;
+    background-color: grey;
+    width: 60px;
+    height: 45px;
+}
+
+.links {
+    display: flex;
+    width: 90%;
+    height: 45px;
+    margin: 5px;
+    padding: 5px;
+    flex-direction: row;
+    align-items: center;
+    background-color: grey;
+    justify-content: right;
+}
+
+ul {
+    list-style: none;
+    justify-self: space-between;
+   
+}
+
+div {
+    margin: 5px;
+}
+
+.main-area {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content {
+    width: 70%;
+    height: 250px;
+    background-color: gray;
+    text-align: left;
+    padding: 5px;
+
+}
+
+.sidebar {
+    width: 27%;
+    height: 250px;
+    background-color: gray;
+    text-align: left;
+    padding: 5px;
+    justify-items: right;
+}
+
+.footer{
+    height: 50px;
+    width: 98%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    align-items: center;
+}

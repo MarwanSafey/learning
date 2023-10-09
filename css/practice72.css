@@ -1,0 +1,39 @@
+.container {
+    margin: 40px auto;
+    width: 200px;
+    perspective: 600px;  /*used for the 3d*/
+  }
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+
+  .box:hover {
+    transform: rotateX(-180deg);
+  }
+  
+  .box .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    backface-visibility: hidden; /*betshtaghal lama rotate 180 3ashan yeb2a backface*/
+  }
+  
+  .box .front {
+    background-color: red;
+  }
+  
+  .box .back {
+    background-color: green;
+    transform: rotateX(180deg);
+  }

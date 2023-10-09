@@ -1,0 +1,37 @@
+div {
+    width: 300px;
+    height: 200px;
+    margin: 30px auto;
+    background-color: #eee ;
+    color: #00a2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+}
+
+div::before {
+    content: "";
+    background-color:  #00a2ff ;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+div::after {
+    content: "";
+    background-color:  #f24758 ;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(5deg);
+    z-index: -2;
+}
